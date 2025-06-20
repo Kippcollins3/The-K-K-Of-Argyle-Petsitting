@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K&K of Argyle Pet Sitting</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    ul {
+      line-height: 2;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .images img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .reservation-form input,
+    .reservation-form select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button,
+    .reservation-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <svg
+      class="logo"
+      width="120"
+      height="120"
+      viewBox="0 0 120 120"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="logoTitle"
+      role="img"
+      style="display: block; margin: 0 auto 20px;"
+    >
+      <title id="logoTitle">K&amp;K of Argyle Pet Sitting Logo</title>
+      <circle cx="60" cy="60" r="58" fill="#4CAF50" stroke="#2e7d32" stroke-width="4" />
+      <ellipse cx="60" cy="80" rx="20" ry="18" fill="#fff" />
+      <circle cx="38" cy="52" r="12" fill="#fff" />
+      <circle cx="52" cy="36" r="10" fill="#fff" />
+      <circle cx="68" cy="36" r="10" fill="#fff" />
+      <circle cx="82" cy="52" r="12" fill="#fff" />
+      <text
+        x="60"
+        y="30"
+        text-anchor="middle"
+        font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        font-weight="bold"
+        font-size="24"
+        fill="white"
+        style="user-select:none;"
+      >
+        K&amp;K
+      </text>
+    </svg>
+    <h1>K&K of Argyle Pet Sitting</h1>
+    <p>Friendly. Reliable. Loving Care for Your Pets</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#rates">Rates</a>
+    <a href="#about">About</a>
+    <a href="#reserve">Reserve</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="images">
+    <img src="https://placedog.net/400/250?id=1" alt="Happy dog" />
+    <img src="https://placedog.net/400/250?id=2" alt="Playful dog" />
+    <img src="https://placedog.net/400/250?id=3" alt="Relaxed dog" />
+    <img src="https://placedog.net/400/250?id=4" alt="Dog with toy" />
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🐶 Daily Walks and Exercise</li>
+      <li>🐱 Feeding and Fresh Water</li>
+      <li>🏠 Overnight Stays at Your Home</li>
+      <li>💊 Medication Administration</li>
+      <li>📸 Daily Updates with Photos</li>
+    </ul>
+  </section>
+
+  <section id="rates">
+    <h2>Rates</h2>
+    <ul>
+      <li><strong>$20</strong> per visit</li>
+      <li><strong>$70/day</strong> (no overnight) for up to 2 pets</li>
+      <li><strong>$90/night</strong> for overnight stays with up to 2 pets</li>
+      <li>More than 2 pets or stays longer than 7 days: <strong>Rates discussed individually</strong></li>
+    </ul>
+    <p><em>Compare to boarding — you'll save and your pets stay happy at home!</em></p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We're a mother-son team from Texas offering compassionate, professional pet sitting services. 
+      Kim Hatfield has extensive experience caring for pets of all kinds, while Kipp Collins brings youth, responsibility, and love for animals to every visit.
+    </p>
+  </section>
+
+  <section id="reserve">
+    <h2>Make a Reservation</h2>
+    <form
+      action="https://formspree.io/f/myzjdjrl"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label> 
+      <button type="submit">Send</button>
+    </form>
+    <p><strong>Note:</strong> You’ll receive an email confirmation. We’ll follow up within 24 hours.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone (main):</strong> <a href="tel:9033907561">903-390-7561</a> (Kim Hatfield)</p>
+    <p><strong>Kipp Collins:</strong> <a href="mailto:kipp.collins@yahoo.com">kipp.collins@yahoo.com</a> | <a href="tel:9033882251">903-388-2251</a></p>
+    <p><strong>Kim Hatfield:</strong> <a href="mailto:kimhatfield05@gmail.com">kimhatfield05@gmail.com</a></p>
+    <p>We'd love to hear from you! Call or email us anytime with questions or to chat about your pet's needs.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 K&K of Argyle Pet Sitting — Kipp Collins & Kim Hatfield</p>
+  </footer>
+</body>
+</html>
